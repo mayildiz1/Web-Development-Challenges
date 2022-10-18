@@ -1,0 +1,89 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+}
+
+
+.container {
+  /* margin: 25%; */
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  background-color: white;
+  border-radius: 0.5rem;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* align-items: center; */
+}
+
+/* .product-image{
+  position: relative;
+  align-items: center;
+} */
+
+.picture {
+  width: 100%;
+  max-width: 500px;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.description {
+  margin: 10%;
+  width: 80%;
+  }
+
+.name {
+  font-family: 'Cinzel', serif;
+}
+
+.price {
+  font-family: 'Fraunces', serif;
+  font-size: 1.5rem;
+  color: hsl(158, 36%, 37%);
+}
+.linethrough {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: line-through;
+  font-size: 0.75rem;
+  color: hsl(228, 12%, 48%);
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 25% 10px 25%;
+  text-align: center;
+  position: relative;
+  /* left: 25%; */
+  /* margin: 25%; */
+  width: 25%;
+
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 7px;
+}
+
+@media (min-width: 375px) {
+  .container{
+    /* grid-template-columns: repeat(2,1fr); */
+  }
+
+  .picture {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 0.5rem;
+    max-width: 500px;
+  }
+}
